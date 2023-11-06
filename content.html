@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>customerForm</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="nav-tab">
+        <img src="./img/logo-sim.jpg" alt="#" class="img-fluid" width="50px">
+        <i class="fa-solid fa-circle-xmark" style="color: #e10909; font-size: 25px;"></i>
+    </nav>
+    <div class="container-fluid" style="background-color: #d3d3d3;">
+        <div class="row justify-content-center">
+
+            <div class="col-lg-2 col-md-4 col-sm-8">
+                <label for="">Select COM port</label><br>
+                <select name="" id="" class="py-1">
+                    <option value="">COM7</option>
+                    <option value="">COM8</option>
+                    <option value="">COM9</option>
+                </select>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-8">
+                <label for="">Click to connect</label><br>
+                <a href="#" class="btn mb-3" style="background-color: #e10909;">OFF</a>
+            </div>
+            <div class="col-lg-7 col-md-12 col-sm-12 my-2 " style="background-color: #a9a9a9;">
+                <div class="row py-2">
+                    <div class="col-lg-4">
+                        <div class="control">
+                            <label for="">Application</label><br>
+                            <select name="" id="">
+                                <option value="">EFI Test Bench</option>
+                                <option value="">EFI Test Bench</option>
+                                <option value="">EFI Test Bench</option>
+                                <option value="">EFI Test Bench</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="control">
+                            <label for="">Fuel Mode</label><br>
+                            <input type="number" placeholder="0">
+
+                        </div>
+
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="control">
+                            <label for="">Version</label><br>
+                            <input type="text" placeholder="V1.0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: whitesmoke;">
+        <div class="row py-2">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="indicators">
+                    <ul class="d-flex gap-3">
+                        <li class="green">Online Values</li>
+                        <li class="red">Engine Parameters</li>
+                        <li class="blue">LUT</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12" >
+                <div class="row  py-3">
+                    <div class="col-lg-2 col-md-3 col-sm-4  py-2">
+                        <div class="rpm text-center" style="display: flex;align-items: center;justify-content: center;">
+                            <p class="fw-bold text-light">0 <br> RPM</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4  py-2">
+                        <div class="map text-center" style="display: flex;align-items: center;justify-content: center;">
+                            <p class="fw-bold text-light">0 <br> MAP(Pressure)</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 py-2">
+                        <div class="t-p text-center" style="display: flex;align-items: center;justify-content: center;">
+                            <p class="fw-bold text-light">0 <br> Thorttle Position</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-4 py-5">
+                        <div class="levelBox text-light">
+                            <p>0</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 py-1" style="align-content: flex-start;">
+                        <div class="modes">
+                            <li>Cracking Mode</li>
+                            <li>Running Mode</li>
+                            <li>Engine Hault</li>
+                        </div>
+                        <div class="input-group d-flex py-3">
+                            <label for="" class="input-text" style="background-color: #d3d3d3;">FeulMix %:</label>
+                            <input type="number" placeholder="0" style=" margin-left: 5px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <table class="table table-bordered caption-top w-100">
+                   
+                    <thead>
+                      <tr>
+                        <th scope="col"> </th>
+                        <th scope="col">Battery volts</th>
+                        <th scope="col">Throttle Position(%)</th>
+                        <th scope="col">Engine Temp(C)</th>
+                        <th scope="col">Absolute Pressure(kPa)</th>
+                        <th scope="col">Gas Pressure(kPa)</th>
+                        <th scope="col">Air Temp(C)</th>
+                        <th scope="col">Speed(RPM)</th>
+                        <th scope="col">SOI(CAATDC)</th>
+                      </tr>
+                    </thead>
+                    <thead class="table table-bordered ">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody  class="table table-primary ">
+                      <tr>
+                        <th scope="row">1</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
